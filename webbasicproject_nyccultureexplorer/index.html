@@ -1,94 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYC Culture Explorer</title>
-    <link rel="icon" type="image/png" href="nyc_culture_explorer/images/sparkles.png">
-    <style>
-        #header{width: 100%; text-align: center;border-radius:5px; background: none; color:pink; border:5px solid pink;}
-        #left { 
-        float: left; 
-        width: 120px; 
-        background-color: #CB87AF; 
-        border-radius: 5px; 
-        } 
-        #main { 
-        padding-left: 130px; margin:5px; 
-        }
-    </style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYC Culture Explorer</title>
+  <link rel="icon" type="image/png" href="nyc_culture_explorer/images/sparkles.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="screen.css" />
 </head>
 
 <body>
-<div id="header"> 
-   <h1>NYC Culture Explorer!</h1> 
-   <h3>Discover more about me outside of work below</h3> 
-</div id="left">
-<h3>Discover, have fun, repeat ☕✨</h3> 
-<p>Exploring New York City’s art scene one matcha latte at a time. This site documents my weekend gallery walks and coffee stops across Chelsea and SoHo — where data, design, and culture collide. </p>
-</div>
+  <header id="header">
+    <h1>NYC Culture Explorer!</h1>
+    <h3 class="tagline">A weekend map of coffee, art, and design — my favorite kind of city walk</h3>
+  </header>
 
-<div id="main"> 
-<nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="museums.html">Museums</a></li>
-        <li><a href="galleries.html">Galleries</a></li>
-        <li><a href="cafes.html">Cafes</a></li>
-        <li><a href="restaurants.html">Restaurants</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cafes.html#cafes">Cafes</a></li>
+      <li><a href="galleries.html#galleries">Galleries</a></li>
+      <li><a href="museums.html#museums">Museums</a></li>
+      <li><a href="restaurants.html#restaurants">Restaurants</a></li>
+    </ul>
+  </nav>
 
+  <!-- INTRO NOW BELOW NAV -->
+  <section id="intro">
+    <h3>Discover, have fun, repeat ☕✨</h3>
+    <p>
+      Exploring New York City’s creative corners one matcha latte at a time. From Chelsea galleries to SoHo cafés,
+      this project traces how design and culture connect through everyday spaces.
+    </p>
+  </section>
 
-<h2>Art museums</h2> 
-<section class="banner">
-    <img src="https://visitnyc.com/wp-content/uploads/2024/04/1-45.jpg" alt="Art museums" class="responsive-img" style="width: 750px; height: auto;">
-</section>
-<p>
-This is one paragraph
-</p>
+  <main>
+    <div class="grid-container">
+      <section id="cafes" class="grid-item">
+        <a href="cafes.html" class="card-link">
+          <h2>Cafes</h2>
+          <img
+            src="https://imageio.forbes.com/specials-images/imageserve/68777860fa1e8af41b4cc872/Base-12Matcha-03/960x0.jpg?format=jpg&width=960"
+            alt="Cafes"
+            class="responsive-img"
+          />
+        </a>
+        <p>Quiet corners, matcha, latte art and the smell of espresso...</p>
+      </section>
 
+      <section id="galleries" class="grid-item">
+        <a href="galleries.html" class="card-link">
+          <h2>Galleries</h2>
+          <img
+            src="https://whitewall.art/wp-content/uploads/2024/09/Tracey-Emins-exhibition-at-White-Cube-Bermondsey-4.jpg"
+            alt="Galleries"
+            class="responsive-img"
+          />
+        </a>
+        <p>Minimalist white walls and soft lighting... aka, my comfort zone.</p>
+      </section>
 
-<h2>Chelsea galleries</h2>
-<section class="banner">
-    <img src="https://ny.thepaperfair.com/wp-content/uploads/2025/07/Container_-group-exhibition-at-A-Space-Gallery_installation-view.jpg" alt="Chelsea galleries" class="responsive-img" style="width: 750px; height: auto;">
-</section>
-<p>
-This is one paragraph
-</p>
+      <section id="museums" class="grid-item">
+        <a href="museums.html" class="card-link">
+          <h2>Museums</h2>
+          <img
+            src="https://www.moma.org/assets/visit/entrance-image--museum-crop-7516b01003659172f2d9dbc7a6c2e9d9.jpg"
+            alt="Museums"
+            class="responsive-img"
+          />
+        </a>
+        <p>Old masters meet new tech installations. Mood: timeless.</p>
+      </section>
 
-<h2>Manhattan cafes</h2>
-<section class="banner">
-    <img src="https://imageio.forbes.com/specials-images/imageserve/68777860fa1e8af41b4cc872/Base-12Matcha-03/960x0.jpg?format=jpg&width=960" alt="Manhattan cafes" class="responsive-img" style="width: 750px; height: auto;">
-</section>
-<p>
-This is one paragraph
-</p>
+      <section id="restaurants" class="grid-item">
+        <a href="restaurants.html" class="card-link">
+          <h2>Restaurants</h2>
+          <img
+            src="https://images.ctfassets.net/1aemqu6a6t65/2MXHx5M1bTHL1KysjWuYEt/34d05a7004a123b2a62893dc4ea98a5e/La-Mercerie-Manhattan-NYC-Photo-Gentl-_-Hyers-2.jpg"
+            alt="Restaurants"
+            class="responsive-img"
+          />
+        </a>
+        <p>Comfort food meets design plating — culture you can taste.</p>
+      </section>
+    </div>
 
-<h2>Restaurants in the City</h2>
-<section class="banner">
-    <img src="https://images.ctfassets.net/1aemqu6a6t65/2MXHx5M1bTHL1KysjWuYEt/34d05a7004a123b2a62893dc4ea98a5e/La-Mercerie-Manhattan-NYC-Photo-Gentl-_-Hyers-2.jpg" alt="Restaurants in the City" class="responsive-img" style="width: 750px; height: auto;">
-</section>
-<p>
-This is one paragraph
-</p>
+    <section class="info-section">
+      <h2>Few of My Quick Local Favorites 💕</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Corner</th>
+            <th>Neighborhood</th>
+            <th>Vibe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>David Zwirner</td><td>Chelsea</td><td>Modern Minimal</td></tr>
+          <tr><td>La Mercerie</td><td>SoHo</td><td>Chic French</td></tr>
+          <tr><td>The Met Cloisters</td><td>Fort Tryon Park</td><td>Architectural Calm</td></tr>
+          <tr><td>Salon 94</td><td>Upper East Side</td><td>Contemporary Sophistication</td></tr>
+          <tr><td>MoMA</td><td>Midtown</td><td>Iconic Design & Art</td></tr>
+          <tr><td>Boucherie</td><td>West Village</td><td>Parisian Charm</td></tr>
+          <tr><td>Ralph’s Coffee</td><td>Upper East Side</td><td>Classic Americana</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 
+<!-- ===== FOOTER ===== -->
+    <p class="image-credit">
+    Image sources: Habitually Chic, 12 Matcha Official, David Zwirner, Artnet, The Met Museum, MoMA, La Mercerie, and Time Out New York.  
+    All images © their respective owners, used for educational and non-commercial purposes.
+    </p>
 
-<footer id="footer">
-&copy; Sohee Megan Kim 2025
-</footer>
-
-
+    <footer id="footer">
+    &copy; 2025 <span class="footer-name">Sohee Megan Kim®</span>
+    </footer>
 </body>
 </html>
-
-
-div {
-   background-color: green;
-   height: 50px;
-   width: 300px;
-}
 

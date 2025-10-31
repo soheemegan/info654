@@ -1,1 +1,86 @@
-Web Basics Project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Museums — NYC Culture Explorer</title>
+  <link rel="icon" type="image/png" href="nyc_culture_explorer/images/sparkles.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="screen.css" />
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <h1>NYC Culture Explorer!</h1>
+    <h3 class="tagline">A weekend map of coffee, art, and design — my favorite kind of city walk</h3>
+  </header>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="cafes.html#cafes">Cafes</a></li>
+      <li><a href="galleries.html#galleries">Galleries</a></li>
+      <li><a class="active" href="museums.html#museums">Museums</a></li>
+      <li><a href="restaurants.html#restaurants">Restaurants</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== MUSEUM INTRO ===== -->
+  <section id="intro">
+    <h3>Exploring the city through museums 🏛️✨</h3>
+    <p class="page-intro">
+      This page features a few of my favorite <strong>museums</strong> in New York — spaces that preserve history while constantly reinventing how we experience it.  
+      From medieval cloisters to modern glass façades, each museum offers a different lens on art, architecture, and reflection.
+    </p>
+  </section>
+
+  <!-- ===== MUSEUM SELECTION ===== -->
+  <section id="museums-feature">
+  <h2 class="visually-hidden">Museums Feature Section</h2>
+  <div class="grid-container">
+      
+      <!-- The Met Cloisters -->
+      <section class="grid-item museum-item">
+        <a href="https://www.metmuseum.org/visit/plan-your-visit/met-cloisters" class="card-link" target="_blank">
+          <h3>The Met Cloisters</h3>
+          <p>Address: 99 Margaret Corbin Dr, New York, NY 10040</p>
+          <img src="https://www.metmuseum.org/-/media/images/about-the-met/collection-areas/medieval-art/cloisters-gardens/gardens-subpage/met-cloister-gardens_2320x940.jpg?sc_lang=en&h=940&w=2320&la=en&hash=A7D2B5280A859F9B9998855B3518561A" 
+               alt="The Met Cloisters" />
+        </a>
+        <p>
+          Perched above the Hudson River, <strong>The Met Cloisters</strong> feels far from Manhattan.  
+          I love its serenity — the way medieval architecture and gardens slow you down and invite you to look closer. It’s a reminder that design, even centuries old, still shapes emotion and time.
+        </p>
+      </section>
+
+      <!-- MoMA -->
+      <section class="grid-item museum-item">
+        <a href="https://www.moma.org/" class="card-link" target="_blank">
+          <h3>The Museum of Modern Art (MoMA)</h3>
+          <p>Address: 11 W 53rd St, New York, NY 10019</p>
+          <img src="https://www.moma.org/assets/visit/entrance-image--museum-crop-7516b01003659172f2d9dbc7a6c2e9d9.jpg" 
+               alt="The Museum of Modern Art" />
+        </a>
+        <p>
+          <strong>MoMA</strong> never feels the same twice. Between digital installations, iconic modern works, and quiet corners that mix light and structure,  
+          it’s one of those places where design theory, emotion, and innovation coexist naturally.
+        </p>
+      </section>
+
+    </div>
+  </section>
+
+<!-- ===== FOOTER ===== -->
+    <p class="image-credit">
+    Image sources: Habitually Chic, 12 Matcha Official, David Zwirner, Artnet, The Met Museum, MoMA, La Mercerie, and Time Out New York.  
+    All images © their respective owners, used for educational and non-commercial purposes.
+    </p>
+
+    <footer id="footer">
+    &copy; 2025 <span class="footer-name">Sohee Megan Kim®</span>
+    </footer>
+</body>
+</html>

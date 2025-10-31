@@ -1,0 +1,419 @@
+:root {
+  --baby-pink-bg: #fff6f8;
+  --baby-pink: #f7dce3;
+  --baby-pink-border: #f4c9d2;
+  --baby-pink-accent: #d68b9b;
+  --content-max: 1200px;
+}
+
+/* ===== BASE ===== */
+body {
+  background: var(--baby-pink-bg);
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  border-top: 1px solid var(--baby-pink-border);
+  border-bottom: 1px solid var(--baby-pink-border);
+  background-color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #222;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--baby-pink-accent);
+  border-bottom: 2px solid var(--baby-pink-accent);
+}
+
+/* ===== HEADER ===== */
+#header {
+  text-align: center;
+  padding: 3rem 1rem 1.2rem;
+}
+
+#header h1 {
+  font-weight: 600;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+#header .tagline {
+  color: var(--baby-pink-accent);
+  font-weight: 500;
+  margin-top: 0.4rem;
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+}
+
+/* ===== INTRO BELOW NAV ===== */
+#intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 2rem auto 3rem;
+  padding: 0 1rem;
+}
+
+#intro h3 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #000;
+}
+
+#intro p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333;
+  margin: 0 auto;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  max-width: var(--content-max);
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* ===== GRID ===== */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+  gap: 1.4rem; /* smaller gap between grid rows */
+  justify-items: center;
+  align-items: stretch;
+}
+
+.grid-item {
+  border: 2px solid var(--baby-pink-border);
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(247, 220, 227, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--baby-pink-accent);
+  box-shadow: 0 8px 16px rgba(247, 220, 227, 0.55);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid var(--baby-pink-border);
+  transition: 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.02);
+}
+
+/* ===== CARD TITLES ===== */
+.card-link h2 {
+  color: var(--baby-pink-accent);
+  text-decoration: none;
+  margin-bottom: 0.6rem;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-link:hover h2 {
+  color: var(--baby-pink);
+}
+
+.grid-item p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 1rem auto 0;
+  max-width: 90%;
+  line-height: 1.6;
+}
+
+/* ===== TABLE ===== */
+.info-section {
+  text-align: center;
+}
+
+.info-section h2 {
+  color: var(--baby-pink-accent);
+  margin-bottom: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 2rem auto;
+  background-color: #fff;
+  border: 2px solid var(--baby-pink-border);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(247, 220, 227, 0.25);
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--baby-pink-border);
+  text-align: center;
+  color: #333;
+}
+
+th {
+  background-color: var(--baby-pink);
+  color: #000;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== PINK LINKS ===== */
+a, .pink-link {
+  color: var(--baby-pink-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover, .pink-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  border-top: 1px solid var(--baby-pink-border);
+  border-bottom: 1px solid var(--baby-pink-border);
+  margin: 3rem 0;
+  padding: 1.5rem 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  border-top: 1px solid var(--baby-pink-border);
+  color: var(--baby-pink-accent);
+  font-size: 0.9rem;
+  padding: 2rem 0;
+}
+
+.footer-name {
+  color: var(--baby-pink-accent);
+  font-weight: 500;
+}
+
+footer::after {
+  content: "";
+}
+
+.image-credit {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  main {
+    padding: 0 1rem;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .grid-item img {
+    height: 240px;
+  }
+}
+
+
+/* ===== EDITED ON HALLOWEEN index.html ===== */
+/* remove section borders globally */
+section {
+  border: none;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+
+/* tighten intro and grid spacing */
+#intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 1.5rem auto 1.5rem; /* smaller bottom margin */
+  padding: 0 1rem;
+}
+
+#header h1 {
+  color: var(--baby-pink-accent); /* elegant dusty pink */
+}
+
+#header .tagline {
+  color: #666; /* subtle grey for balance */
+}
+
+#intro h3 {
+  color: var(--baby-pink); /* soft baby pink highlight */
+}
+
+p,
+.grid-item p {
+  color: #444; /* gentle dark grey instead of black */
+}
+
+/* remove button-like hover */
+nav a {
+  color: #222;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: color 0.2s ease;
+}
+
+/* hover: turn pink, no underline or border */
+nav a:hover {
+  color: var(--baby-pink-accent);
+  border: none;
+  text-decoration: none;
+}
+
+/* active page indicator: pink text only */
+nav a.active {
+  color: var(--baby-pink-accent);
+}
+
+
+
+
+/* ===== EDITED ON HALLOWEEN about.html ===== */
+#intro p {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* ===== CATEGORY INTRO SECTION ===== */
+#intro {
+  text-align: center;
+  margin: 4rem auto 2rem;
+  max-width: 70ch;
+}
+
+#intro h3 {
+  color: var(--baby-pink-accent);
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+}
+
+.page-intro {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 65ch;
+}
+
+/* Slightly smaller gap between top and bottom rows */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+/* ===== ABOUT PAGE LIST STYLES ===== */
+#highlights, #overview {
+  max-width: 70ch;
+  margin: 3rem auto;
+  padding-left: 2rem;
+}
+
+#highlights h3,
+#overview h3 {
+  text-align: center;
+  color: var(--baby-pink-accent);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#highlights p,
+#overview p {
+  text-align: center;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* List spacing and pink bullets */
+#highlights ul, #overview ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0 auto;
+  color: #222;
+}
+
+#highlights ul ul {
+  list-style-type: circle;
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+  color: #555;
+}
+
+#highlights li,
+#overview li {
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
+}
+
+
+
+/* ===== MANUAL FIX keep <section> for semantics and turn it into hidden heading ===== */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
